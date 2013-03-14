@@ -1,0 +1,33 @@
+{
+    "name": "spinnercontrol",
+    "title": "jQuery Spinner Control",
+    "description": "jQuery plugin for creating a spinner control.",
+    "keywords": [
+        "spinner",
+        "updown"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Anant Anand Gupta",
+        "url": "http://www.anantanandgupta.net/about-me/"
+    },
+    "maintainers": [
+        {
+            "name": "Anant Anand Gupta",
+            "url": "http://www.anantanandgupta.net/about-me/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPLv3",
+            "url": "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
+        }
+    ],
+    "bugs": "https://github.com/MindzGroup-OS/spinner-control/issues",
+    "homepage": "https://github.com/MindzGroup-OS/spinner-control",
+    "docs": "http://jquery.anantanandgupta.net/plugins/jQuerySpinnerControl/",
+    "download": "http://jquery.anantanandgupta.net/plugins/jQuerySpinnerControl/downloads/",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
