@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Spinner Control - Home</title>
+    <link href="../styles/jquery.spinnercontrol.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/jquery.snippet.min.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/jquery.js" type="text/javascript"></script>
+    <script src="../scripts/jquery.spinnercontrol.js" type="text/javascript"></script>
+    <script src="../scripts/jquery.snippet.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="siteHeader">
+            jQuery Spinner Control
+        </div>
+        <div class="pageNavigation">
+            <a href="../demo/1/" class="option">Default Implementation</a>|<a href="../demo/2/" class="option">Time Spinner</a>|<a href="../demo/3/" class="option">Spinning List of Items</a>|<a href="../demo/4/" class="option">Decimal Spinner</a>
+        </div>
+        <div class="pageInformation">
+            <div>
+                <strong>Plug-in Name:</strong> jQuery Spinner Control
+            </div>
+            <div>
+                <strong>Developer:</strong> Anant Anand Gupta | <a href="http://www.mindzgroup.com" target="_blank">MindzGroup Technologies</a>
+            </div>
+            <div class="last">
+                <strong>Description:</strong> Developed this plug-in to Spin the given values in text type input.
+            </div>
+        </div>
+        <div class="pageContents">
+            <div class="heading">
+                Options (Parameter Object)
+            </div>
+            <div class="textpara">
+                <ul>
+                    <li><b>type:</b><br>
+                        It tells the plugin that what is the type of the control to be rendered. Currently this plugin supports 'range' and 'list' values for this option.<br>
+                        <i>default value:= 'range'</i></li>
+                    <li><b>typedata:</b><br>
+                        It provides the additional values which will be used to render the specific type of the control. This option has the following subset of options:
+                        <ul>
+                            <li><b>min:</b><br />
+                                minimum value in the range type of the control.<br />
+                                <i>default value:= 1</i></li>
+                            <li><b>max:</b><br />
+                                maximum value in the range type of the control.<br />
+                                <i>default value:= 10</i></li>
+                            <li><b>interval:</b><br />
+                                spin interval the range type of the control.<br />
+                                <i>default value:= 1</i></li>
+                            <li><b>decimalplaces:</b><br />
+                                number of the decimal places in the range type of the control.<br />
+                                <i>default value:= 0</i></li>
+                            <li><b>list:</b><br />
+                                list of items to spin in the list type of the control.<br />
+                                <i>default value:= ''</i></li>
+                        </ul>
+                    </li>
+                    <li><b>defaultVal:</b><br>
+                        It tells the plugin that what is the default value shown on the control. <i>default value:= 0 (for the range type of the control)</i></li>
+                    <li><b>width:</b><br>
+                        what is the width of the value display area in px. <i>default value:= '30px'</i></li>
+                    <li><b>backColor:</b><br>
+                        what is the background color of the display area in px. <i>default value:= '#fff'</i></li>
+                    <li><b>looping:</b><br>
+                        if the value reaches to the either of the ends in the provided range/list it starts over from the other end on setting the value to this option as true. <i>default value:= false</i></li></ul>
+            </div>
+        </div>
+        <div class="pageFooter">
+            <a href="../" class="home">Home</a>|<a href="" class="doc">Documentation</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("pre.javascript").snippet("javascript", { showNum: false, transparent: false, style: "zellner" });
+    })
+</script>
+</html>
