@@ -1,57 +1,81 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jQuery Spinner Control by MindzGroup Technologies</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>jQuery Spinner Control - Home</title>
+    <link href="Styles/jquery.spinnercontrol.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/jquery.snippet.min.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.spinnercontrol.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.snippet.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <div id="header">
-        <nav>
-            <li class="fork"><a href="/">Home</a></li>
-            <li class="fork"><a href="https://github.com/MindzGroupTechnologies/spinner-control">View On GitHub</a></li>
-            <li class="downloads"><a href="https://github.com/MindzGroupTechnologies/spinner-control/zipball/master">ZIP</a></li>
-            <li class="downloads"><a href="https://github.com/MindzGroupTechnologies/spinner-control/tarball/master">TAR</a></li>
-            <li class="title">DOWNLOADS</li>
-        </nav>
-    </div>
-    <div class="wrapper">
-        <section>
-            <div id="title">
-                <h1 style="color:#ffcc00;font-weight:700;">jQuery  Spinner Control</h1>
-                <p>A jQuery plugin to create a Spinner Control</p>
-                <hr>
-                <p style="text-align:justify;"><small>jQuery Spinner Control Demo Page.</small></p>
-                <hr>
-                <div class="credits" style="text-align:center;">
-                    Project Maintained By<br />
-                    <a href="https://github.com/MindzGroupTechnologies">MindzGroup Technologies</a>
-                </div>
+    <div class="pageContainer">
+        <div class="siteHeader">
+            jQuery Spinner Control
+        </div>
+        <div class="pageNavigation">
+            <a href="demo/1/" class="option">Default Implementation</a>|<a href="demo/2/" class="option">Time Spinner</a>|<a href="demo/3/" class="option">Spinning List of Items</a>|<a href="demo/4/" class="option">Decimal Spinner</a>
+        </div>
+        <div class="pageInformation">
+            <div>
+                <strong>Plug-in Name:</strong> jQuery Spinner Control
             </div>
-        </section>
+            <div>
+                <strong>Developer:</strong> Anant Anand Gupta | <a href="http://www.mindzgroup.com" target="_blank">MindzGroup Technologies</a>
+            </div>
+            <div class="last">
+                <strong>Description:</strong> Developed this plug-in to Spin the given values in text type input.
+            </div>
+        </div>
+        <div class="pageContents">
+            <div class="heading">
+                Overview
+            </div>
+            <div class="textpara">
+                Converts the text input to a spinner control. This plugin works fine with ASP.net for the post backs.
+            </div>
+            <div class="heading">
+                Important Features
+            </div>
+            <div>
+                <ul>
+                    <li><b>Spin a number range:</b><br>
+                        <i>Provide a range of numbers with an interval to spin these values.</i></li>
+                    <li><b>Spin a text list:</b><br>
+                        <i>Provide a list of comma separated values to spin these values.</i></li>
+                    <li><b>Looping Spinner:</b><br>
+                        <i>once you reach to the end, it can automatically start over again and vice verse.</i></li>
+                </ul>
+            </div>
+            <div>
+                <b>Usage</b><br>
+                Simply call the SpinnerControl() method on the input of text type as shown in the example below:<br>
+                <pre class="javascript">$(function(){ 
+    $('#txtHoursSpinner').SpinnerControl(); 
+});
+</pre>
+                The above code is the default implementation of the spinner control which renders a range type spinner having a min value of 1 max value of 10 with an interval of 1. Here is another example of the usage:
+                <pre class="javascript">$(function(){ 
+    $('#txtHoursSpinner').SpinnerControl({ 
+        type:'list', 
+        typedata:{ 
+            list:'Item 1,Item 2,Item 3' 
+        }, 
+        defaultVal:'Item 1', 
+        looping:true 
+    }); 
+});</pre>
+            </div>
+        </div>
+        <div class="pageFooter">
+            <a href="" class="home">Home</a>|<a href="documentation/" class="doc">Documentation</a>
+        </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-2269721-7");
-            pageTracker._trackPageview();
-        } catch (err) { }
-    </script>
-
 </body>
+<script type="text/javascript">
+    $(function () {
+        $("pre.javascript").snippet("javascript", { showNum: false, transparent: false, style: "zellner" });
+    })
+</script>
 </html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Spinner Control - Time Spinner</title>
+    <link href="../../Styles/jquery.spinnercontrol.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/jquery.snippet.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.spinnercontrol.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.snippet.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="siteHeader">
+            jQuery Spinner Control
+        </div>
+        <div class="pageNavigation">
+            <a href="../1/" class="option">Default Implementation</a>|<a class="option">Time Spinner</a>|<a href="../3/" class="option">Spinning List of Items</a>|<a href="../4/" class="option">Decimal Spinner</a>
+        </div>
+        <div class="pageInformation">
+            <div>
+                <strong>Demo:</strong> Time Spinner
+            </div>
+            <div class="last">
+                <strong>Demo Description:</strong> You can provide a min and max value with an interval for a range type of Spinner Control. In this demo below we are going to demonstrate the jQuery Spinner Control to spin Time.
+            </div>
+        </div>
+        <div class="pageContents">
+            <div class="heading">
+                Code: Time Spinner
+            </div>
+            <div>
+                <pre class="javascript">$(function () {
+    $("#txtHours").SpinnerControl({
+        type: 'range',
+        typedata: { min: 0, max: 23, interval: 1 },
+        defaultVal: 10,
+        width: '50px'
+    });
+    $("#txtMinutes").SpinnerControl({
+        type: 'range',
+        typedata: { min: 0, max: 59, interval: 1 },
+        defaultVal: 10,
+        width: '50px'
+    });
+})</pre>
+            </div>
+            <div class="heading">
+                Output:
+            </div>
+            <div class="OutputContainer">
+                <div style="float: left; overflow: auto; padding: 0 10px;">
+                    <div>
+                        Hours:</div>
+                    <input type="text" id="txtHours" />
+                </div>
+                <div style="float: left; overflow: auto; padding: 0 10px;">
+                    <div>
+                        Minutes:</div>
+                    <input type="text" id="txtMinutes" />
+                </div>
+            </div>
+        </div>
+        <div class="pageFooter">
+            <a href="../../" class="home">Home</a>|<a href="../../documentation/" class="doc">Documentation</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("#txtHours").SpinnerControl({
+            type: 'range',
+            typedata: { min: 0, max: 23, interval: 1 },
+            defaultVal: 10,
+            width: '50px'
+        });
+        $("#txtMinutes").SpinnerControl({
+            type: 'range',
+            typedata: { min: 0, max: 59, interval: 1 },
+            defaultVal: 10,
+            width: '50px'
+        });
+        $("pre.javascript").snippet("javascript", { showNum: false, transparent: false, style: "zellner" });
+    })
+</script>
+</html>

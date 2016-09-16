@@ -1,0 +1,132 @@
+﻿html, body, form
+{
+    height: 100%;
+    margin: 0;
+}
+body
+{
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    color: #333;
+    background-image: url(../images/back.jpg);
+}
+div.pageContainer
+{
+    width: 960px;
+    clear: both;
+    margin: 0 auto;
+}
+div.pageContainer div.siteHeader
+{
+    font-size: 48px;
+    font-family: Georgia;
+    color: #696;
+    line-height: 75px;
+    padding: 0 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    text-align: center;
+}
+div.pageContainer div.pageNavigation
+{
+    margin-bottom: 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+div.pageContainer div.pageInformation
+{
+    padding: 20px;
+    border: 4px double #eee;
+}
+div.pageContainer div.pageInformation div
+{
+    border-bottom: 1px dashed #eee;
+    padding: 3px;
+    text-align: justify;
+}
+div.pageContainer div.pageInformation div.last
+{
+    border-bottom: 0 none;
+}
+div.pageContainer div.pageContents
+{
+    padding: 10px 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+div.pageContainer div.pageContents div.heading
+{
+    font-weight: bold;
+}
+div.pageContainer div.pageContents div.textpara
+{
+    overflow: auto;
+    display: block;
+    padding: 5px 0px 20px 0px;
+    text-align:justify;
+}
+div.pageContainer div.pageContents div.textpara li
+{
+    list-style-type: decimal;
+    padding-top:5px;
+}
+div.pageContainer div.pageContents div.textpara li li
+{
+    list-style-type: lower-roman;
+}
+div.pageContainer div.pageContents div.OutputContainer
+{
+    overflow: auto;
+    display: block;
+    padding: 20px 0px;
+}
+div.pageContainer div.pageFooter
+{
+    margin: 10px 0;
+    padding: 0 0 30px 0;
+    text-align: center;
+    height:30px;
+}
+div.pageContainer div.pageNavigation a, div.pageContainer div.pageFooter a
+{
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+div.pageContainer div.pageNavigation .option
+{
+    background-image: url(../Images/settings_icon_gray.png);
+}
+div.pageContainer div.pageNavigation .option:hover
+{
+    background-image: url(../Images/settings_icon_color.png);
+}
+div.pageContainer div.pageFooter .home
+{
+    background-image: url(../Images/home_icon_gray.png);
+}
+div.pageContainer div.pageFooter .home:hover
+{
+    background-image: url(../Images/home_icon_color.png);
+}
+div.pageContainer div.pageFooter .doc
+{
+    background-image: url(../Images/documentation_gray.png);
+}
+div.pageContainer div.pageFooter .doc:hover
+{
+    background-image: url(../Images/documentation_color.png);
+}
+.snippet-container
+{
+    font-size: 11px;
+}
