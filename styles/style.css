@@ -104,27 +104,27 @@ div.pageContainer div.pageNavigation a, div.pageContainer div.pageFooter a
 }
 div.pageContainer div.pageNavigation .option
 {
-    background-image: url(../Images/settings_icon_gray.png);
+    background-image: url(../images/settings_icon_gray.png);
 }
 div.pageContainer div.pageNavigation .option:hover
 {
-    background-image: url(../Images/settings_icon_color.png);
+    background-image: url(../images/settings_icon_color.png);
 }
 div.pageContainer div.pageFooter .home
 {
-    background-image: url(../Images/home_icon_gray.png);
+    background-image: url(../images/home_icon_gray.png);
 }
 div.pageContainer div.pageFooter .home:hover
 {
-    background-image: url(../Images/home_icon_color.png);
+    background-image: url(../images/home_icon_color.png);
 }
 div.pageContainer div.pageFooter .doc
 {
-    background-image: url(../Images/documentation_gray.png);
+    background-image: url(../images/documentation_gray.png);
 }
 div.pageContainer div.pageFooter .doc:hover
 {
-    background-image: url(../Images/documentation_color.png);
+    background-image: url(../images/documentation_color.png);
 }
 .snippet-container
 {
