@@ -1,0 +1,26 @@
+{
+  "name": "spinner-control",
+  "description": "jQuery Spinner Control",
+  "main": "dist/jquery.spinnercontrol.js",
+  "authors": [
+    "Anant Anand Gupta <anantanandgupta@gmail.com> (http://about.me/anantanandgupta)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jQuery",
+    "plugin",
+    "spinner"
+  ],
+  "homepage": "http://github.mindzgroup.com/spinner-control/v2/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
