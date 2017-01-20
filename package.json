@@ -1,0 +1,28 @@
+{
+    "name": "spinner-control",
+    "version": "1.0.0",
+    "description": "jQuery Spinner Control",
+    "main": "plugin/jquery.spinnercontrol.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MindzGroupTechnologies/spinner-control.git"
+    },
+    "keywords": [
+        "jquery",
+        "plugin",
+        "spinner"
+    ],
+    "author": {
+        "name": "Anant Anand Gupta",
+        "email": "anantanandgupta@gmail.com",
+        "url": "https://about.me/anantanandgupta"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MindzGroupTechnologies/spinner-control/issues"
+    },
+    "homepage": "https://github.mindzgroup.com/spinner-control/"
+}
