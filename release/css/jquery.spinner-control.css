@@ -1,3 +1,83 @@
-body {
-  color: #333;
+.SpinnerControl {
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.SpinnerControl div {
+  float: left;
+  height: 24px;
+  line-height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+}
+.SpinnerControl .LeftButton,
+.SpinnerControl .RightButton {
+  width: 30px;
+  background-color: #666;
+  cursor: pointer;
+  position: relative;
+}
+.SpinnerControl .LeftButton::after,
+.SpinnerControl .RightButton::after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -8px;
+  width: 16px;
+}
+.SpinnerControl .ValueDisplay {
+  padding: 0 10px;
+  border-left: none;
+  border-right: none;
+  background-color: #fff;
+  text-align: center;
+}
+.SpinnerControl .LeftButton {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+.SpinnerControl .LeftButton::after {
+  border-right: 8px solid #fff;
+}
+.SpinnerControl .RightButton {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+.SpinnerControl .RightButton::after {
+  border-left: 8px solid #fff;
+}
+.SpinnerControl.Orange div {
+  border: 1px solid orange;
+}
+.SpinnerControl.Orange .LeftButton,
+.SpinnerControl.Orange .RightButton {
+  background-color: orange;
+}
+.SpinnerControl.OrangeRed div {
+  border: 1px solid orangered;
+}
+.SpinnerControl.OrangeRed .LeftButton,
+.SpinnerControl.OrangeRed .RightButton {
+  background-color: orangered;
+}
+.SpinnerControl.Green div {
+  border: 1px solid green;
+}
+.SpinnerControl.Green .LeftButton,
+.SpinnerControl.Green .RightButton {
+  background-color: green;
+}
+.SpinnerControl.Blue div {
+  border: 1px solid blue;
+}
+.SpinnerControl.Blue .LeftButton,
+.SpinnerControl.Blue .RightButton {
+  background-color: blue;
 }

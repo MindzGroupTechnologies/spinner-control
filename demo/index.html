@@ -1,3 +1,39 @@
 <html>
+
+<head>
     <title>Spinner Control Demo</title>
+    <script src="js\jquery.min.js" charset="utf-8"></script>
+    <script src="js\jquery.spinner-control.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/jquery.spinner-control.min.css">
+</head>
+
+<body>
+    <input type="text" id="months">
+    <input type="text" id="days">
+    <script type="text/javascript">
+        (function() {
+            'use strict';
+
+            $("#months").SpinnerControl({
+                type: 'list',
+                typedata: {
+                    list: 'January,February,March,April,May,June,July,August,September,October,November,December'
+                },
+                width: '100px',
+                looping: true
+            });
+
+            $("#days").SpinnerControl({
+                type: 'list',
+                typedata: {
+                    list: 'Sunday,Monday,Tuesday,Wednesday,Thurday,Friday,Saturday'
+                },
+                width: '100px',
+                looping: true,
+                theme: 'Orange'
+            });
+        }());
+    </script>
+</body>
+
 </html>

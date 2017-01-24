@@ -1,3 +1,90 @@
-body {
-    color: #333;
+.SpinnerControl {
+	overflow: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 5px;
+	div {
+		float: left;
+		height: 24px;
+		line-height: 20px;
+		box-sizing: border-box;
+		border: 1px solid #666;
+	}
+	.LeftButton,
+	.RightButton {
+		width: 30px;
+		background-color: #666;
+		cursor: pointer;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			box-sizing: border-box;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			top: 50%;
+			margin-top: -6px;
+			left: 50%;
+			margin-left: -8px;
+			width: 16px;
+		}
+	}
+	.ValueDisplay {
+		padding: 0 10px;
+		border-left: none;
+		border-right: none;
+		background-color: #fff;
+        text-align: center;
+	}
+	.LeftButton {
+		border-radius: 5px 0 0 5px;
+		border-right: none;
+		&::after {
+			border-right: 8px solid #fff;
+		}
+	}
+	.RightButton {
+		border-radius: 0 5px 5px 0;
+		border-left: none;
+		&::after {
+			border-left: 8px solid #fff;
+		}
+	}
+	&.Orange {
+		div {
+			border: 1px solid orange;
+		}
+		.LeftButton,
+		.RightButton {
+			background-color: orange;
+		}
+	}
+	&.OrangeRed {
+		div {
+			border: 1px solid orangered;
+		}
+		.LeftButton,
+		.RightButton {
+			background-color: orangered;
+		}
+	}
+	&.Green {
+		div {
+			border: 1px solid green;
+		}
+		.LeftButton,
+		.RightButton {
+			background-color: green;
+		}
+	}
+	&.Blue {
+		div {
+			border: 1px solid blue;
+		}
+		.LeftButton,
+		.RightButton {
+			background-color: blue;
+		}
+	}
 }
