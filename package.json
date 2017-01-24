@@ -1,6 +1,6 @@
 {
   "name": "spinner-control",
-  "version": "2.0.0",
+  "version": "2.0.0-beta",
   "description": "jQuery Spinner Control",
   "main": "dist/jquery.spinnercontrol.js",
   "scripts": {
